@@ -4,7 +4,7 @@ from django.db.models import QuerySet
 
 def create_movie_session(movie_show_time: str,
                          movie_id: int,
-                         cinema_hall_id: int) -> CinemaHall:
+                         cinema_hall_id: int) -> MovieSession:
     created_movie_session = MovieSession.objects.create(
         show_time=movie_show_time,
         cinema_hall=cinema_hall_id,
